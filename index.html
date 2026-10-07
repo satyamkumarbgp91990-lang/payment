@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pay ₹100 - Satyam Kumar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 32px 24px;
+      border-radius: 18px;
+      box-shadow: 0 8px 30px #0001;
+      text-align: center;
+      max-width: 360px;
+      width: calc(100% - 40px);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+    }
+
+    .amount {
+      font-size: 34px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .pay {
+      display: block;
+      background: #0b7a3b;
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .upi {
+      font-size: 13px;
+      color: #666;
+      margin-top: 18px;
+      word-break: break-all;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <h1>Satyam Kumar</h1>
+
+    <div class="amount">₹100</div>
+
+    <a class="pay"
+       href="upi://pay?pa=9199012168@amazonpay&amp;pn=Satyam%20Kumar&amp;am=100&amp;cu=INR">
+      Pay ₹100 with UPI
+    </a>
+
+    <div class="upi">
+      UPI ID: 9199012168@amazonpay
+    </div>
+  </main>
+</body>
+</html>
